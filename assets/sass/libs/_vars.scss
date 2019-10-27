@@ -31,8 +31,8 @@
 // Palette.
 	$palette: (
 		bg: 				rgb(255, 255, 255),
-		bg-transparent:		rgba(176,212,168,0.95),
-		bg-semi-transparent:rgba(176,212,168,0.50),
+		bg-transparent:		rgba(212,176,168,0.95),
+		bg-semi-transparent:rgba(212, 176, 168, 0.5),
 		fg-bold:			rgb(42, 27, 48),
 		fg:					rgba(42,27,48,0.75),
 		fg-light:			rgba(42,27,48,0.5),
@@ -44,6 +44,6 @@
 		accent1: 			rgb(152, 129, 177),
 		accent2:			rgb(42, 27, 48),
 		accent2-transparent:rgba(42,27,48,0.95),
-		accent3:			rgba(176,212,168,0.95),
-		accent4: 			rgb(176, 212, 168)
+		accent3:			rgba(212,176,168,0.95),
+		accent4: 			rgb(212, 176, 168)
 	);
