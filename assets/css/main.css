@@ -23,7 +23,7 @@
   font-size: 0.8em;
 }
 #clues table.clue-table td a {
-  color: rgba(212, 176, 168, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
   text-decoration: none;
   text-underline: none;
@@ -74,6 +74,12 @@
   font-style: normal;
   font-weight: 300;
   src: url(../fonts/Horrorshow.otf);
+}
+@font-face {
+  font-family: "Creepster";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Creepster-Regular.ttf);
 }
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1599,7 +1605,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 body, input, select, textarea {
-  color: rgba(212, 176, 168, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-family: "SundayComics", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 100;
@@ -1622,7 +1628,7 @@ a:hover {
 }
 
 strong, b {
-  color: #d4b0a8;
+  color: white;
   font-weight: 300;
 }
 
@@ -1635,8 +1641,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "HorrorShow", "SundayComics", Helvetica, sans-serif;
-  color: #d4b0a8;
+  font-family: "Creepster", "SundayComics", Helvetica, sans-serif;
+  color: white;
   font-weight: 300;
   line-height: 1em;
   margin: 0 0 1em 0;
@@ -1649,9 +1655,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1, h2 {
   color: #bf0c13;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5em;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.05em;
 }
 
 h3 {
@@ -1771,7 +1777,7 @@ pre code {
 }
 @-moz-keyframes spinner-hide {
   0% {
-    color: rgba(212, 176, 168, 0.15);
+    color: rgba(255, 255, 255, 0.15);
     z-index: 100001;
     -moz-transform: scale(1) rotate(0deg);
     -webkit-transform: scale(1) rotate(0deg);
@@ -1797,7 +1803,7 @@ pre code {
 }
 @-webkit-keyframes spinner-hide {
   0% {
-    color: rgba(212, 176, 168, 0.15);
+    color: rgba(255, 255, 255, 0.15);
     z-index: 100001;
     -moz-transform: scale(1) rotate(0deg);
     -webkit-transform: scale(1) rotate(0deg);
@@ -1823,7 +1829,7 @@ pre code {
 }
 @-ms-keyframes spinner-hide {
   0% {
-    color: rgba(212, 176, 168, 0.15);
+    color: rgba(255, 255, 255, 0.15);
     z-index: 100001;
     -moz-transform: scale(1) rotate(0deg);
     -webkit-transform: scale(1) rotate(0deg);
@@ -1849,7 +1855,7 @@ pre code {
 }
 @keyframes spinner-hide {
   0% {
-    color: rgba(212, 176, 168, 0.15);
+    color: rgba(255, 255, 255, 0.15);
     z-index: 100001;
     -moz-transform: scale(1) rotate(0deg);
     -webkit-transform: scale(1) rotate(0deg);
@@ -2021,7 +2027,7 @@ body.landing:before {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  color: rgba(212, 176, 168, 0.15);
+  color: rgba(255, 255, 255, 0.15);
   content: "";
   cursor: default;
   display: block;
@@ -2080,7 +2086,7 @@ section.special, article.special {
 }
 
 header p {
-  color: #d4b0a8;
+  color: white;
   position: relative;
   margin: 0 0 1.5em 0;
 }
@@ -2128,7 +2134,7 @@ form {
 }
 
 label {
-  color: #d4b0a8;
+  color: white;
   display: block;
   font-size: 0.9em;
   font-weight: 300;
@@ -2216,7 +2222,7 @@ textarea {
 
 select option {
   background-color: black;
-  color: #d4b0a8;
+  color: white;
 }
 select:focus::-ms-value {
   background: transparent;
@@ -2238,7 +2244,7 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  color: rgba(212, 176, 168, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -2273,7 +2279,7 @@ input[type=radio] + label:before {
 input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
   background: rgba(212, 176, 168, 0.25);
-  color: #d4b0a8;
+  color: white;
   content: "";
 }
 input[type=checkbox]:focus + label:before,
@@ -2290,27 +2296,27 @@ input[type=radio] + label:before {
 }
 
 ::-webkit-input-placeholder {
-  color: rgba(212, 176, 168, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  color: rgba(212, 176, 168, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: rgba(212, 176, 168, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: rgba(212, 176, 168, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
 
 .formerize-placeholder {
-  color: rgba(212, 176, 168, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1;
 }
 
@@ -2362,7 +2368,7 @@ input[type=radio] + label:before {
 }
 .icon.alt:before {
   color: black !important;
-  text-shadow: 1px 0 0 #d4b0a8, -1px 0 0 #d4b0a8, 0 1px 0 #d4b0a8, 0 -1px 0 #d4b0a8;
+  text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white;
 }
 .icon.major {
   background: white;
@@ -2391,7 +2397,7 @@ input[type=radio] + label:before {
 }
 .icon.major.alt:before {
   color: white !important;
-  text-shadow: 1px 0 0 #d4b0a8, -1px 0 0 #d4b0a8, 0 1px 0 #d4b0a8, 0 -1px 0 #d4b0a8;
+  text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white;
 }
 .icon.bot-web {
   background-image: url(../platforms/web.png);
@@ -2613,7 +2619,7 @@ table td {
   padding: 0.75em 0.75em;
 }
 table th {
-  color: #d4b0a8;
+  color: white;
   font-size: 0.9em;
   font-weight: 300;
   padding: 0 0.75em 0.75em 0.75em;
@@ -2663,7 +2669,7 @@ input[type=button],
   border-radius: 4px;
   border: 0;
   box-shadow: inset 0 0 0 1px rgba(212, 176, 168, 0.3);
-  color: #d4b0a8 !important;
+  color: white !important;
   cursor: pointer;
   display: inline-block;
   font-weight: 300;
@@ -2722,7 +2728,7 @@ input[type=button].special,
 .button.special {
   background-color: #bf0c13;
   box-shadow: none;
-  color: #d4b0a8 !important;
+  color: white !important;
 }
 input[type=submit].special:hover,
 input[type=reset].special:hover,
@@ -2745,7 +2751,7 @@ input[type=button]:disabled,
 .button:disabled {
   background-color: rgba(212, 176, 168, 0.3) !important;
   box-shadow: none !important;
-  color: #d4b0a8 !important;
+  color: white !important;
   cursor: default;
   opacity: 0.25;
 }
@@ -2996,7 +3002,7 @@ body.is-touch .spotlight {
 .wrapper.style2 .button:active {
   background-color: rgba(212, 176, 168, 0.075) !important;
   box-shadow: inset 0 0 0 1px rgba(212, 176, 168, 0.5) !important;
-  color: #d4b0a8 !important;
+  color: white !important;
 }
 .wrapper.style2 input[type=submit]:active,
 .wrapper.style2 input[type=reset]:active,
@@ -3008,7 +3014,7 @@ body.is-touch .spotlight {
 .wrapper.style2 input[type=reset].special,
 .wrapper.style2 input[type=button].special,
 .wrapper.style2 .button.special {
-  background-color: #d4b0a8;
+  background-color: white;
   color: #bf0c13 !important;
 }
 .wrapper.style2 input[type=submit].special:hover, .wrapper.style2 input[type=submit].special:active,
@@ -3020,7 +3026,7 @@ body.is-touch .spotlight {
 .wrapper.style2 .button.special:active {
   background-color: rgba(212, 176, 168, 0.075) !important;
   box-shadow: inset 0 0 0 1px rgba(212, 176, 168, 0.5) !important;
-  color: #d4b0a8 !important;
+  color: white !important;
 }
 .wrapper.style2 input[type=submit].special:active,
 .wrapper.style2 input[type=reset].special:active,
@@ -3091,7 +3097,7 @@ body.is-touch .spotlight {
 }
 .dropotron > li a, .dropotron > li span {
   border: 0;
-  color: rgba(212, 176, 168, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   display: block;
   padding: 0.1em 1em;
   text-decoration: none;
@@ -3276,7 +3282,7 @@ body.is-touch #banner {
 
 /* Footer */
 #footer {
-  background: #d4b0a8;
+  background: #bf0c13;
   padding: 6em 0;
   text-align: center;
 }
@@ -3293,10 +3299,10 @@ body.is-touch #banner {
 }
 #footer .icons .icon.alt:before {
   color: white !important;
-  text-shadow: 1px 0 0 rgba(212, 176, 168, 0.5), -1px 0 0 rgba(212, 176, 168, 0.5), 0 1px 0 rgba(212, 176, 168, 0.5), 0 -1px 0 rgba(212, 176, 168, 0.5);
+  text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
 }
 #footer .copyright {
-  color: rgba(212, 176, 168, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.8em;
   line-height: 1em;
   margin: 2em 0 0 0;
@@ -3317,6 +3323,9 @@ body.is-touch #banner {
 }
 #footer .copyright li a {
   color: inherit;
+}
+#footer .footer-fg {
+  color: white;
 }
 
 /* XLarge */
@@ -3563,7 +3572,7 @@ header h6 + p {
     box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
   }
   #titleBar .title {
-    color: #d4b0a8;
+    color: white;
     display: block;
     font-weight: 300;
     height: 44px;
@@ -3594,7 +3603,7 @@ header h6 + p {
   }
   #titleBar .toggle:before {
     background: #bf0c13;
-    color: rgba(212, 176, 168, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     content: "";
     display: block;
     font-size: 18px;
@@ -3634,7 +3643,7 @@ header h6 + p {
   #navPanel .link {
     border: 0;
     border-top: solid 1px rgba(212, 176, 168, 0.05);
-    color: rgba(212, 176, 168, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     display: block;
     height: 3em;
     line-height: 3em;
@@ -3647,7 +3656,7 @@ header h6 + p {
     border-top: 0;
   }
   #navPanel .link.depth-0 {
-    color: #d4b0a8;
+    color: white;
     font-weight: 300;
   }
   #navPanel .link .indent-1 {

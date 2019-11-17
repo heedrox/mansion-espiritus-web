@@ -22,7 +22,7 @@
 
 // Font.
 	$font: (
-		family-title:    	('HorrorShow', 'SundayComics', Helvetica, sans-serif),
+		family-title:    	('Creepster', 'SundayComics', Helvetica, sans-serif),
 		family:				('SundayComics', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				100,
@@ -34,10 +34,10 @@
 		bg: 				rgb(0, 0, 0),
 		bg-transparent:		rgba(0,0,0,0.95),
 		bg-semi-transparent:rgba(0, 0, 0, 0.5),
-		fg-bold:			rgb(212,176,168),
-		fg:					rgba(212,176,168,0.75),
-		fg-light:			rgba(212,176,168,0.5),
-		fg-lighter:			rgba(212,176,168,0.15),
+		fg-bold:			rgb(255,255,255),
+		fg:					rgba(255,255,255,0.75),
+		fg-light:			rgba(255,255,255,0.5),
+		fg-lighter:			rgba(255,255,255,0.15),
 		border:				rgba(212,176,168,0.3),
 		border-bg:			rgba(212,176,168,0.075),
 		border2:			rgba(212,176,168,0.5),
@@ -46,5 +46,7 @@
 		accent2:			rgb(255, 255, 255),
 		accent2-transparent:rgba(255,255,255,0.95),
 		accent3:			rgba(212,176,168,0.95),
-		accent4: 			rgb(212, 176, 168)
+		accent4: 			rgb(212, 176, 168),
+		footer-bg: 			rgb(191, 12, 19),
+		footer-fg: 			rgb(255, 255, 255)
 	);

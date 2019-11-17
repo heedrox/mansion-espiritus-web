@@ -30,6 +30,13 @@
   src: url(../fonts/Horrorshow.otf);
 }
 
+@font-face {
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Creepster-Regular.ttf);
+}
+
 @include skel-breakpoints((
         xlarge: '(max-width: 1680px)',
         large: '(max-width: 1280px)',
@@ -135,9 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   color: _palette(accent1);
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5em;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.05em;
 }
 
 h3 {
@@ -1574,7 +1581,7 @@ body.is-touch {
 /* Footer */
 
 #footer {
-  background: _palette(accent4);
+  background: _palette(footer-bg);
   padding: $size-wrapper-pad-tb 0;
   text-align: center;
 
@@ -1611,6 +1618,10 @@ body.is-touch {
         color: inherit;
       }
     }
+  }
+
+  .footer-fg {
+    color:_palette(footer-fg)
   }
 }
 
