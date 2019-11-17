@@ -22,6 +22,7 @@
 
 // Font.
 	$font: (
+		family-title:    	('HorrorShow', 'SundayComics', Helvetica, sans-serif),
 		family:				('SundayComics', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				100,
@@ -30,20 +31,20 @@
 
 // Palette.
 	$palette: (
-		bg: 				rgb(255, 255, 255),
-		bg-transparent:		rgba(212,176,168,0.95),
-		bg-semi-transparent:rgba(212, 176, 168, 0.5),
-		fg-bold:			rgb(42, 27, 48),
-		fg:					rgba(42,27,48,0.75),
-		fg-light:			rgba(42,27,48,0.5),
-		fg-lighter:			rgba(42,27,48,0.15),
-		border:				rgba(42,27,48,0.3),
-		border-bg:			rgba(42,27,48,0.075),
-		border2:			rgba(42,27,48,0.5),
-		border2-bg:			rgba(42,27,48,0.25),
-		accent1: 			rgb(152, 129, 177),
-		accent2:			rgb(42, 27, 48),
-		accent2-transparent:rgba(42,27,48,0.95),
+		bg: 				rgb(0, 0, 0),
+		bg-transparent:		rgba(0,0,0,0.95),
+		bg-semi-transparent:rgba(0, 0, 0, 0.5),
+		fg-bold:			rgb(212,176,168),
+		fg:					rgba(212,176,168,0.75),
+		fg-light:			rgba(212,176,168,0.5),
+		fg-lighter:			rgba(212,176,168,0.15),
+		border:				rgba(212,176,168,0.3),
+		border-bg:			rgba(212,176,168,0.075),
+		border2:			rgba(212,176,168,0.5),
+		border2-bg:			rgba(212,176,168,0.25),
+		accent1: 			rgb(191, 12, 19),
+		accent2:			rgb(255, 255, 255),
+		accent2-transparent:rgba(255,255,255,0.95),
 		accent3:			rgba(212,176,168,0.95),
 		accent4: 			rgb(212, 176, 168)
 	);

@@ -23,6 +23,13 @@
   src: url(../fonts/sundaycomicsbb_bold.otf);
 }
 
+@font-face {
+  font-family: 'HorrorShow';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Horrorshow.otf);
+}
+
 @include skel-breakpoints((
         xlarge: '(max-width: 1680px)',
         large: '(max-width: 1280px)',
@@ -113,6 +120,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: _font(family-title);
   color: _palette(fg-bold);
   font-weight: _font(weight-bold);
   line-height: 1em;
@@ -1551,7 +1559,7 @@ body.landing {
       .button {
         font-size: 0.85em;
         font-weight: 100;
-        text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
+        // text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
       }
     }
   }
