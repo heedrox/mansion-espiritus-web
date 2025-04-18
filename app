@@ -1,0 +1,1 @@
+../mansion-espiritus-gpt/web
